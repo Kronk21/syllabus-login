@@ -31,5 +31,9 @@
             window.location.href = "vista/index.php";
             break;
         }
+        else if (respuesta.mensaje === 'No tiene permiso para accesar a este módulo') {
+            console.log(respuesta.mensaje);
+            break;
+        }
     }
 })(300000);
